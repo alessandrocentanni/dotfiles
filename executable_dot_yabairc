@@ -44,6 +44,5 @@ yabai -m config                                 \
     mouse_drop_action            swap
 
 yabai -m rule --add app="^System Settings$" sticky=on layer=above manage=off
-yabai -m rule --add app="^Digital Color Meter$" sticky=on layer=above manage=off
 
 echo "yabai configuration loaded.."

@@ -218,7 +218,7 @@ cmd - 5 :
 	yabai -m space --focus "${index}"
 
 cmd - 6 : 
-	index="$(yabai -m query --windows | jq 'map(select(."app" == "iTerm2"))[0].space')" && \
+	index="$(yabai -m query --windows | jq 'map(select(."app" == "kitty"))[0].space')" && \
 	yabai -m space --focus "${index}"
 
 cmd - 9 : open -na 'spotify'
