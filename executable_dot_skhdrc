@@ -201,23 +201,23 @@ cmd - 1 :
 	index="$(yabai -m query --windows | jq 'map(select(.app == "Code")) | sort_by(.id)[0].space')" && \
 	yabai -m space --focus "${index}"
 
+# cmd - 2 : 
+# 	index="$(yabai -m query --windows | jq 'map(select(.app == "Code")) | sort_by(.id)[1].space')" && \
+# 	yabai -m space --focus "${index}"
+
+# cmd - 3 : 
+# 	index="$(yabai -m query --windows | jq 'map(select(.app == "Code")) | sort_by(.id)[2].space')" && \
+# 	yabai -m space --focus "${index}"
+
 cmd - 2 : 
-	index="$(yabai -m query --windows | jq 'map(select(.app == "Code")) | sort_by(.id)[1].space')" && \
-	yabai -m space --focus "${index}"
-
-cmd - 3 : 
-	index="$(yabai -m query --windows | jq 'map(select(.app == "Code")) | sort_by(.id)[2].space')" && \
-	yabai -m space --focus "${index}"
-
-cmd - 4 : 
 	index="$(yabai -m query --windows | jq 'map(select(."app" == "Google Chrome"))[0].space')" && \
 	yabai -m space --focus "${index}"
 
-cmd - 5 : 
+cmd - 3 : 
 	index="$(yabai -m query --windows | jq 'map(select(."app" == "Slack"))[0].space')" && \
 	yabai -m space --focus "${index}"
 
-cmd - 6 : 
+cmd - 4 : 
 	index="$(yabai -m query --windows | jq 'map(select(."app" == "kitty"))[0].space')" && \
 	yabai -m space --focus "${index}"
 
