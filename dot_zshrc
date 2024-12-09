@@ -123,3 +123,6 @@ eval "$(zoxide init zsh)"
 
 # run this after upate 
 # source ~/.zshrc
+
+[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
+export PATH="/usr/local/opt/mongodb-community@5.0/bin:$PATH"
